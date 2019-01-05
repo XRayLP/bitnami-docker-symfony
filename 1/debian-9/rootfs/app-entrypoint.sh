@@ -22,8 +22,8 @@ if [ "$1" = "/run.sh" ]; then
   fi
 
   # Link Symfony app to the index
-  if [ ! -f "$PROJECT_DIRECTORY/web/index.php" ]; then
-    sudo ln -s "$PROJECT_DIRECTORY/web/app.php" "$PROJECT_DIRECTORY/web/index.php"
+  if [ ! -f "$PROJECT_DIRECTORY/public/index.php" ]; then
+    sudo ln -s "$PROJECT_DIRECTORY/public/app.php" "$PROJECT_DIRECTORY/public/index.php"
   fi
 fi
 
